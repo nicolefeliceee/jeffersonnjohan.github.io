@@ -1,0 +1,306 @@
+/* Head */
+.head{
+    height: 250px;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.head .title{
+    font-family: "Mulish Bold";
+    font-size: 43px;
+}
+
+.head .subtitle{
+    color: #613702;
+    font-size: 20px;
+}
+
+/* login */
+.login{
+    background-image: url(../img/login.png);
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.login .card{
+    width: 510px;
+    height: 620px;
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+    padding: 37px 68px;
+}
+
+.card .header{
+    font-family: "Mulish Bold";
+    font-size: 32px;
+}
+
+.card .line{
+    width: 95%;
+    margin-top: 1px;
+    margin-bottom: 25px;
+    height: 3px;
+    background-color: #E8E8E8;
+}
+
+.question{
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card label{
+    margin-bottom: 10px;
+}
+
+input[type="text"]::placeholder, textarea::placeholder{
+    font-family: "Mulish Regular";
+    font-size: 15px;
+    color: #ABABAB;
+}
+
+label:hover{
+    cursor: pointer;
+}
+
+input[type="text"]{
+    transition: .3s;
+    border-radius: 7px;
+    padding: 7px 16px;
+    border: 1.5px solid #371601;
+    display: flex;
+    justify-content: left;
+    font-family: "Mulish Regular";
+    height: 35px;
+    font-size: 15px;
+}
+
+input[type="text"]:hover, textarea:hover{
+    background-color: #F0EFEF;
+    cursor: pointer;
+}
+
+textarea{
+    width: 100%;
+    border-radius: 7px;
+    padding: 7px 16px;
+    border: 1.5px solid #371601;
+    font-family: "Mulish Regular";
+    height: 105px;
+    display: flex;
+    font-size: 15px;
+    resize: none;
+}
+
+.container-checkbox{
+    width: 24px;
+    height: 24px;
+}
+
+.terms label{
+    margin-left: 10px;
+    margin-bottom: 0;
+    line-height: 24px;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    height: 24px;
+    width: 24px;
+    border: 1.5px solid #371601;
+    border-radius: 6px;
+    transition: background-color .2s;
+}
+
+input[type="checkbox"]:hover{
+    background-color: #ABABAB;
+}
+
+.terms:hover{
+    cursor: pointer;
+}
+
+input[type="checkbox"]:active{
+    border: 3px solid #613702;
+}
+
+input[type="checkbox"]:checked{
+    background-color: white;
+    background-image: url(../img/check.png);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.terms{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    height: 24px;
+}
+
+.submit{
+    margin-top: 18px;
+    height: 30px;
+    display: flex;
+}
+
+.submit button{
+    width: 80px;
+    height: 30px;
+    border-radius: 6px;
+    font-family: "Mulish Regular";
+    border: none;
+    background-color: #E5AB56;
+    font-size: 16px;
+}
+
+.submit button:hover{
+    background-color: #DEA249;
+    cursor: pointer;
+}
+
+.submit button:active{
+    background-color: #C58D3C;
+    cursor: pointer;
+}
+
+.submit div{
+    line-height: 30px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #FE3434;
+}
+
+/* Validasi */
+.error-action{
+    animation: vibrate .4s 2;
+    animation-play-state: running;
+}
+
+/* Feedback */
+.feedback{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(26,19,1,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.success{
+    height: 400px;
+    width: 350px;
+    background: rgb(126, 242, 100);
+    border-radius: 30px;
+    text-align: center;
+    padding: 45px 80px;
+}
+
+.success img{
+    height: 170px;
+    margin-bottom: 5px;
+}
+
+.success>p{
+    font-size: 30px;
+    font-family: "Mulish Bold";
+}
+
+.success .confirm{
+    background-color: #1D0B01;
+    color: white;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.success .confirm:hover{
+    background-color: #5c2206;
+    cursor: pointer;
+    color: white;
+}
+
+.active{
+    display: flex;
+}
+
+/* Animations */
+@keyframes vibrate {
+    0%{
+        border: 3px solid red;
+    } 33%{
+        transform: rotate(1deg);
+        border: 3px solid red;
+    } 66% {
+        transform: rotate(-1deg);
+        border: 3px solid red;
+    } 100%{
+        border: 3px solid red;
+    }
+}
+
+/* Responsive */
+@media only screen and (max-width: 832px){
+    /* Tablet */
+
+    .login .card{
+        width: 420px;
+        padding: 37px 35px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    /* Handphone */
+    .head{
+        height: 320px;
+        padding: 160px 0;
+    }
+
+    .head .title{
+        font-size: 36px;
+    }
+    
+    .head .subtitle{
+        font-size: 18px;
+    }
+
+    .login .card{
+        width: 80%;
+    }
+
+    input[type="text"]::placeholder, textarea::placeholder{
+        font-size: 9.5px;
+    }
+
+    input[type="text"]{
+        padding: 7px 10px;
+        font-size: 9.5px;
+    }
+
+    textarea{
+        font-size: 9.5px;
+        padding: 7px 10px;
+    }
+
+    .card label{
+        font-size: 15px;
+    }
+
+    .terms label{
+        font-size: 12px;
+    }
+
+    .submit div{
+        font-size: 10px;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+    }
+}

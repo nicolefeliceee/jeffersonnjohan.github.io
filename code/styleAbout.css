@@ -1,0 +1,315 @@
+/* Banner */
+.banner{
+    padding-right: 8vw;
+    height: 43vw;
+    background-image: url('../img/tanamanAbout.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inner-banner{
+    height: 100%;
+    width: 30.5%;
+    overflow: hidden;
+    position: relative;
+    float: right;
+}
+
+.banner p{
+    top: 15vw;
+    left: 7.84vw;
+    line-height: 4.8vw;
+    color: white;
+    font-size: 2.5vw;
+    position: absolute;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.banner img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 34px;
+}
+
+
+/* Founder */
+.founder-headline{
+    text-align: center;
+    padding: 3vw;
+}
+
+h1.headline{
+    font-size: 45px;
+    text-align: center;
+    font-family: "Mulish Bold";
+}
+
+.founder-headline p{
+    font-size: 1.68vw;
+    margin-top: .8vw;
+}
+
+.founder-speech{
+    padding: 1vw 0 0;
+    background-color: #CC9545;
+    display: flex;
+    position: relative;
+}
+
+.founder-speech>img{
+    height: 28.5vw;
+    margin-left: 7vw;
+    position: absolute;
+    bottom: 0;
+}
+
+.founder-text{
+    padding: 6.4vw;
+    text-align: justify;
+    font-size: 21px;
+    width: 70%;
+    margin-left: 27vw;
+}
+
+.founder-text-top{
+    width: 100%;
+    line-height: 45px;
+}
+
+.founder-text-bottom{
+    font-family: "Mulish Bold";
+    margin-top: 1.44vw;
+}
+
+/* Statistic */
+.statistic-header {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statistic-card{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 29px;
+}
+
+.oddBackground{
+    background-color: #734204;
+}
+
+.evenBackground{
+    background-color: #613702;
+}
+
+.statistic-card .text-center{
+    font-family: "Mulish Bold";
+    font-size: 35px;
+    margin-top: 0.4vw;
+}
+
+/* Timeline */
+.timeline{
+    padding: 20px 0;
+    background-color: #FFF;
+}
+
+.timeline-title{
+    width: 410px;
+    padding: 9.6px;
+    margin: auto;
+    border-bottom: 4px solid #1D0B01;
+}
+
+.timeline-content{
+    width: 90%;
+    height: 600px;
+    margin: 60px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-content-button{
+    height: 100%;
+    width: 48px;
+}
+
+.timeline-content-button img{
+    width: 100%;
+}
+
+.timeline-content-text{
+    padding-left: 40px;
+    padding-top: 8px;
+    font-size: 21px;
+}
+
+.marginTop{
+    margin-top: 70.1px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 832px){
+    /* Tablet */
+
+    .banner{
+        height: 70vw;
+    }
+
+    .inner-banner{
+        display: none;
+    }
+    
+    .banner p{
+        top: 23vw;
+        font-size: 5vw;
+        line-height: 9vw;
+    }
+    
+    .founder-headline{
+        padding: 6vw;
+    }
+    
+    h1.headline{
+        font-size: 33px;
+    }
+    
+    .founder-headline p{
+        font-size: 17px;
+    }
+
+    .founder-speech{
+        padding: 0 0 0;
+    }
+
+    .founder-speech>img{
+        height: 40vw;
+        left: 27vw;
+    }
+
+    .founder-text{
+        margin: auto;
+        margin-bottom: 36vw;
+        width: 90%;
+        line-height: 2.88vw;
+        font-size: 18px;
+    }
+    
+    .founder-text-bottom{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .statistic-card{
+        font-size: 24px;
+    }
+
+    .timeline-title{
+        width: 330px;
+        border-bottom: 4px solid #1D0B01;
+    }
+
+    .timeline-content{
+        height: 320px;
+        margin: 40px auto 0;
+    }
+    .timeline-content-button{
+        width: 30px;
+    }
+
+    .timeline-content-button img{
+        width: 27.8px;
+    }
+
+    .timeline-content-text{
+        padding-left: 10px;
+        padding-top: 8px;
+        font-size: 14px;
+    }
+
+    .marginTop{
+        margin-top: 37.3px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    /* Handphone */
+
+    .founder-headline{
+        padding: 10vw;
+        height: 120px;
+    }
+
+    .founder-headline{
+        height: 120px;
+    }
+    
+    h1.headline{
+        font-size: 22px;
+    }
+    
+    .founder-headline p{
+        font-size: 11px;
+    }
+
+    .founder-text-top{
+        line-height: 8vw;
+        font-size: 15px;
+    }
+
+    .founder-text-bottom{
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+
+    .statistic-header{
+        text-align: center;
+        height: 100px;
+    }
+
+    .statistic-card .text-center{
+        font-size: 32px;
+    }
+
+    .statistic-card{
+        font-size: 22px;
+    }
+
+    .timeline-title{
+        width: 240px;
+        border-bottom: 4px solid #1D0B01;
+    }
+
+    .timeline-content{
+        margin: 30px auto 0;
+        height: 280px;
+    }
+    .timeline-content-button{
+        width: 25px;
+    }
+
+    .timeline-content-button img{
+        width: 23.5px;
+    }
+
+    .timeline-content-text{
+        padding-left: 7px;
+        padding-top: 2px;
+        font-size: 11px;
+    }
+
+    .marginTop{
+        margin-top: 32.4px;
+    }
+}

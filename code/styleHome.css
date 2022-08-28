@@ -1,0 +1,593 @@
+/* Untuk javascript */
+.displayNone{
+    display: none;
+}
+
+/* Banner */
+.banner{
+    height: 43vw;
+    background-image: url('../img/mejabelajar.jpg');
+    background-repeat: no-repeat;
+    background-position: 0px -10vw;
+    background-size: cover;
+}
+
+.banner h1{
+    font-family: "Mulish Bold";
+    top: 18.4vw;
+    right: 102px;
+    font-size: 47px;
+    position: absolute;
+}
+
+.banner p{
+    top: 25.5vw;
+    right: 102px;
+    font-size: 26px;
+    position: absolute;
+}
+
+/* Recommendation */
+.recommendation-greeting{
+    text-align: center;
+    font-size: 47px;
+    margin: 45px;
+}
+
+.recommendation-bold{
+    font-weight: bold;
+}
+
+.recommendation-card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recommendation-card-big{
+    width: 34vw;
+    height: 40vw;
+    margin: auto; 
+    background-color: #CC9545;
+    border-radius: 1.2vw;
+    overflow: hidden;
+}
+
+.recommendation-header{
+    background-color: #1D0B01;
+    font-family: "Mulish Bold";
+    height: 8.4vw;
+    line-height: 8.4vw;
+    color: #CC9545;
+    text-align: center;
+    font-size: 3.2vw;
+}
+
+.recommendation-image{
+    height: 18vw;
+    background-image: url(../img/recommendation-card1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.course-title{
+    color: #FFF;
+    text-align: center;
+    font-family: "Mulish Bold";
+    font-size: 1.92vw;
+    margin: 2.8vw 2.8vw 0;
+}
+
+.course-author{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.52vw;
+    margin-top: 1.2vw;
+}
+
+.recommendation-card-small{
+    width: 29.6vw;
+    height: 35.2vw;
+    margin: auto;
+    background-color: #CC9545;
+    border-radius: 1.2vw;
+    overflow: hidden;
+}
+
+.recommendation-card-small .recommendation-header{
+    /* Overloading */
+    height: 7.2vw;
+    line-height: 7.2vw;
+    font-size: 3.04vw;
+}
+
+.recommendation-card-small .recommendation-image{
+    /* Overloading */
+    height: 17.2vw;
+    background-position: 0px;
+}
+
+.recommendation-card-small .course-title{
+    /* Overloading */
+    margin: 1.6vw 1.6vw 0;
+    font-size: 1.76vw;
+}
+
+.recommendation-card-small .course-author{
+    /* Overloading */
+    margin: 1.6vw 0px 0;
+    margin-top: .96vw;
+}
+
+.card1{
+    order:2;
+}
+
+.card2 {
+    order: 1;
+}
+
+.card2 .recommendation-image{
+    background-image: url(../img/recommendation-card2.jpg);
+}
+
+.card3 {
+    order: 3;
+}
+
+.card3 .recommendation-image{
+    background-image: url(../img/recommendation-card3.jpg);
+}
+
+.card-normal{
+    height: 100%;
+}
+
+/* Card Hover */
+.card-hover{
+    background-color: #371601;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    opacity: 0;
+}
+
+.card-hover:hover{
+    animation: opacityAnimation .3s ease-out 0s 1 forwards;
+}
+
+.recommendation-price{
+    background-color: #CC9545;
+    height: 4.96vw;
+    width: 18vw;
+    margin-top: 2.8vw;
+    line-height: 4.96vw;
+    text-align: center;
+    font-family: "Mulish Bold";
+    letter-spacing: 0.4vw;
+    font-size: 2.4vw;
+}
+
+.recommendation-profile-pic{
+    background-image: url(../img/card-profile1.jpg);
+    background-size: cover;
+    height: 11.6vw;
+    width: 11.6vw;
+    margin-top: 1.68vw;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 5px solid #CC9545;
+}
+
+.recommendation-class-description{
+    color: #FFF;
+    text-align: justify;
+    margin: 1.76vw 3.6vw 0px;
+    font-size: 1.6vw;
+}
+
+.recommendation-registration{
+    background-color: #CC9545;
+    width: 12.8vw;
+    height: 4vw;
+    border-radius: .8vw;
+    line-height: 4vw;
+    text-align: center;
+    font-size: 2.24vw;
+    margin-top: 2vw;
+}
+
+.recommendation-price-small{
+    background-color: #CC9545;
+    margin-top: 2.4vw;
+    line-height: 4vw;
+    height: 4vw;
+    width: 14.16vw;
+    text-align: center;
+    font-family: "Mulish Bold";
+    letter-spacing: 0.56vw;
+    font-size: 1.92vw;
+}
+
+.recommendation-profile-pic-small{
+    background-size: cover;
+    height: 9.6vw;
+    width: 9.6vw;
+    margin-top: 1.36vw;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: .4vw solid #CC9545;
+}
+
+.recommendation-card-small .recommendation-class-description{
+    margin: 1.36vw 2.56vw 0px;
+    font-size: 1.52vw;
+    font-family: "Mulish Regular";
+}
+
+.card2 .recommendation-profile-pic-small{
+    background-image: url(../img/card-profile2.jpg);
+}
+
+.card3 .recommendation-profile-pic-small{
+    background-image: url(../img/card-profile3.jpg);
+}
+
+.recommendation-registration:hover{
+    background-color: #613702;
+    color: white;
+    cursor: pointer;
+}
+
+.recommendation-registration:active{
+    color: #FD9999;
+}
+
+/* Best Seller */
+.best-seller{
+    background-color: #1D0B01;
+    height: 44vw;
+    margin-top: 6.4vw;
+    display: flex;
+}
+
+.best-seller-left{
+    border-right: 0.32vw solid #371601;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Raleway Bold";
+}
+
+.best-seller-header{
+    color: #CC9545;
+    text-align: center;
+    font-size: 4.4vw;
+}
+
+.best-seller-price-normal{
+    color: white;
+    font-size: 3.44vw;
+    text-decoration: line-through;
+    margin-top: 1.6vw;
+}
+
+.best-seller-price-discount{
+    color: white;
+    font-size: 8.4vw;
+    margin-top: -0.8vw;
+}
+
+.best-seller-right{
+    width: 60%;
+    height: 100%;
+}
+
+.best-seller-picture{
+    height: 29.6vw;
+    background-image: url(../img/best-seller-picture.jpg);
+    background-size: 105%;
+    background-position-y: 57%;
+}
+
+.best-seller-title{
+    color: #FFF;
+    text-align: center;
+    font-size: 2.8vw;
+    font-family: "Mulish Bold";
+    margin-top: 0.96vw;
+}
+
+.best-seller-author{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.68vw;
+    margin-top: 2.08vw;
+}
+
+/* Promotion */
+.promotions{
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.promotion{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.promotions .promotion1{
+    background-image: url(../img/promotion1.png);
+    order: 1;
+}
+
+.promotions .promotion2{
+    background-image: url(../img/promotion2.png);
+    order: 2;
+}
+
+.promotions .promotion3{
+    background-image: url(../img/promotion3.png);
+    order: 3;
+}
+
+.comefromRight{
+    animation: leavetoLeft 1s;
+}
+
+.leavetoLeft{
+    animation: leavetoLeft 1s forwards;
+}
+
+/* Animation */
+@keyframes leavetoLeft {
+    0%{
+
+    } 100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes opacityAnimation {
+    from{
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media only screen and (max-width: 832px){
+    /* Tablet */
+    .banner{
+        height: 80vw;
+        background-position: 0px -4.8vw;
+    }
+
+    .banner h1{
+        top: 28vw;
+        right: 6vw;
+        font-size: 6.5vw;
+        position: absolute;
+    }
+    
+    .banner p{
+        top: 36vw;
+        right: 6vw;
+        font-size: 3.3vw;
+        position: absolute;
+    }
+
+    /* Recommendation */
+    .recommendation-greeting{
+        text-align: center;
+        font-size: 36px;
+        margin: 45px;
+    }
+
+    .recommendation-card-container{
+        flex-direction: column;
+    }
+
+    .recommendation-card-big{
+        order: 1;
+        width: 350px;
+        height: 500px;
+        border-radius: 3%;
+    }
+    
+    .recommendation-header{
+        height: 105px;
+        line-height: 105px;
+        font-size: 40px;
+    }
+    
+    .recommendation-image{
+        height: 225px;
+        background-image: url(../img/recommendation-card1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .course-title{
+        text-align: center;
+        font-size: 21px;
+        margin: 30px 30px 0;
+    }
+    
+    .course-author{
+        text-align: center;
+        font-size: 19px;
+        margin-top: 15px;
+    }
+    
+    .recommendation-card-small{
+        width: 330px;
+        height: 440px;
+        margin: auto;
+        border-radius: 15px;
+    }
+    
+    .recommendation-card-small .recommendation-header{
+        /* Overloading */
+        height: 90px;
+        line-height: 90px;
+        font-size: 38px;
+    }
+    
+    .recommendation-card-small .recommendation-image{
+        /* Overloading */
+        height: 215px;
+        background-position: 0px;
+    }
+    
+    .recommendation-card-small .course-title{
+        /* Overloading */
+        margin: 20px 20px 0;
+        font-size: 20px;
+    }
+    
+    .recommendation-card-small .course-author{
+        /* Overloading */
+        margin: 20px 0px 0;
+        margin-top: 12px;
+    }
+
+    .recommendation-card-container>div{
+        margin-bottom: 20px;
+    }
+
+    /* Hover */
+    .recommendation-price{
+        height: 62px;
+        width: 225px;
+        margin-top: 35px;
+        line-height: 62px;
+        letter-spacing: 5px;
+        font-size: 30px;
+    }
+    
+    .recommendation-profile-pic{
+        height: 130px;
+        width: 130px;
+        margin-top: 17px;
+        border: 5px solid #CC9545;
+    }
+    
+    .recommendation-class-description{
+        margin: 22px 30px 0px;
+        font-size: 20px;
+    }
+    
+    .recommendation-registration{
+        width: 160px;
+        height: 50px;
+        border-radius: 10px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 28px;
+        margin-top: 15px;
+    }
+    
+    .recommendation-price-small{
+        margin-top: 30px;
+        line-height: 48px;
+        height: 48px;
+        width: 177px;
+        letter-spacing: 7px;
+        font-size: 24px;
+    }
+    
+    .recommendation-profile-pic-small{
+        height: 120px;
+        width: 120px;
+        margin-top: 17px;
+        border-radius: 50%;
+        border: 5px solid #CC9545;
+    }
+    
+    .recommendation-card-small .recommendation-class-description{
+        margin: 17px 32px 0px;
+        font-size: 19px;
+    }
+
+    /* Best Seller */
+    .best-seller{
+        height: 820px;
+        flex-direction: column;
+    }
+
+    .best-seller-left{
+        border: none;
+        width: 100%;
+        height: 300px;
+        padding: 30px 0;
+    }
+
+    .best-seller-header{
+        font-size: 50px;
+    }
+
+    .best-seller-price-normal{
+        font-size: 23px;
+    }
+
+    .best-seller-price-discount{
+        font-size: 43px;
+        margin-top: 0px;
+    }
+
+    .best-seller-right{
+        width: 100%;
+        height: 800px;
+    }
+
+    .best-seller-picture{
+        height: 50vw;
+        min-height: 380px;
+    }
+
+    .best-seller-title{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    .best-seller-author{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    /* Handphone */
+    .banner h1{
+        top: 32vw;
+        right: 6vw;
+        font-size: 6.4vw;
+        position: absolute;
+    }
+    
+    .banner p{
+        top: 40vw;
+        right: 6vw;
+        font-size: 3.5vw;
+        position: absolute;
+    }
+
+    /* Recommendation */
+    .recommendation-greeting{
+        text-align: center;
+        font-size: 42px;
+        margin: 45px;
+    }
+
+    .navbar.positionFixed{
+        position: fixed;
+    }
+}

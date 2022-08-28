@@ -1,0 +1,528 @@
+
+/* Head */
+.head{
+    padding: 110px 65px 20px;
+}
+
+.head .title, .others .title{
+    font-family: "Mulish Bold";
+    font-size: 43px;
+    margin-left: 17px;
+}
+
+.head .subtitle, .others .subtitle{
+    color: #613702;
+    font-size: 20px;
+    margin-left: 17px;
+}
+
+.search{
+    margin-top: 40px;
+    background-color: #E8E8E8;
+    height: 40px;
+    width: 77%;
+    border-radius: 8px;
+    display: flex;
+    margin-left: 17px;
+}
+
+.search:hover{
+    background-color: #F0EFEF;
+    cursor: pointer;
+}
+
+.search:active{
+    background-color: #F0EFEF;
+    border: 1px solid #1D0B01;
+}
+
+.search .icon{
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    width: 50px;
+    height: 100%;
+}
+
+.search .placeholder{
+    line-height: 40px;
+    font-size: 19px;
+    margin-left: 15px;
+    color: #8B8282;
+}
+
+/* Category */
+.category{
+    padding: 20px 65px;
+    font-family: "Mulish Bold";
+}
+
+.category-title{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.line{
+    background-color: pink;
+    width: 95%;
+    margin-top: 3px;
+    height: 5px;
+    background-color: #E8E8E8;
+    position: relative;
+}
+
+.card-container{
+    margin-top: 45px;
+    display: flex;
+    position: relative;
+}
+
+.card-container-extend{
+    display: none;
+}
+
+.active{
+    display: flex;
+}
+
+.card{
+    background-color: #FFECCF;
+    height: 28vw;
+    color: #1D0B01;
+    width: 25.6vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.8vw;
+    overflow: hidden;
+    position: relative;
+    margin-right: 2vw;
+    transition: .1s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card .image{
+    height: 13.6vw;
+    background-size: cover;
+}
+
+.card1 .image{
+    background-image: url(../img/category1.png);
+}
+
+.card2 .image{
+    background-image: url(../img/category2.png);
+}
+
+.card3 .image{
+    background-image: url(../img/category3.png);
+}
+
+.card4 .image{
+    background-image: url(../img/category4.png);
+}
+
+.card5 .image{
+    background-image: url(../img/category5.png);
+}
+
+.card6 .image{
+    background-image: url(../img/category6.png);
+}
+
+.card7 .image{
+    background-image: url(../img/category7.png);
+}
+
+.card8 .image{
+    background-image: url(../img/category8.png);
+}
+
+.card9 .image{
+    background-image: url(../img/category9.png);
+}
+
+.card10 .image{
+    background-image: url(../img/category10.jpg);
+}
+
+.card11 .image{
+    background-image: url(../img/category11.jpg);
+}
+
+.card12 .image{
+    background-image: url(../img/category12.jpg);
+}
+
+.card13 .image{
+    background-image: url(../img/category13.jpg);
+}
+
+.card14 .image{
+    background-image: url(../img/category14.jpg);
+}
+
+.card15 .image{
+    background-image: url(../img/category15.jpg);
+}
+
+.card16 .image{
+    background-image: url(../img/category16.jpg);
+}
+
+.card17 .image{
+    background-image: url(../img/category17.jpg);
+}
+
+.card18 .image{
+    background-image: url(../img/category18.jpg);
+}
+
+.card .information{
+    height: 14.4vw;
+    padding: 0.8vw 2vw;
+}
+
+.information .title{
+    font-size: 1.52vw;
+    margin-bottom: 0.8vw;
+}
+
+.information p{
+    font-family: "Mulish Regular";
+    font-size: 1.2vw;
+}
+
+.information .label-category{
+    background-color: #371601;
+    color: white;
+    font-family: "Mulish Regular";
+    width: 7.6vw;
+    padding: 2px 0px 2px 6px;
+    margin-top: 0.8vw;
+    margin-bottom: 1.2vw;
+    border-radius: 0.24vw;
+    font-size: 1.2vw;
+}
+
+.information .price{
+    background-color: #371601;
+    color: white;
+    width: 8.56vw;
+    height: 3.84vw;
+    text-align: center;
+    border-radius: 0.56vw;
+    line-height: 3.84vw;
+    position: absolute;
+    right: 2.16vw;
+    bottom: 2.8vw;
+    font-family: "Mulish Regular";
+    font-size: 1.2vw;
+    transition: 0.3s;
+    font-size: 1.2vw;
+}
+
+.information .price:hover{
+    background-color: #613702;
+    cursor: pointer;
+}
+
+.extend-button{
+    background-image: url(../img/dropdownNormal.png);
+    background-size: cover;
+    height: 32px;
+    width: 32px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.extend-button:hover{
+    background-image: url(../img/dropdownHover.png);
+    cursor: pointer;
+}
+
+.extend-button:active{
+    background-image: url(../img/dropdownActive.png);
+    cursor: pointer;
+}
+
+div.extend-button-clicked{
+    background-image: url(../img/dropdownClicked.png);
+}
+
+div.extend-button-clicked:hover{
+    background-image: url(../img/dropdownClickedHover.png);
+}
+
+div.extend-button-clicked:active{
+    background-image: url(../img/dropdownClickedActive.png);
+}
+
+/* Others */
+.others{
+    padding: 20px 65px 80px;
+}
+
+.topic-container{
+    margin-top: 2.8vw;
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topic{
+    width: 17.6vw;
+    height: 18.8vw;
+    border-radius: 0.8vw;
+    background-color: #1D0B01;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: .2s;
+}
+
+.topic:hover{
+    background-color: #613702;
+    cursor: pointer;
+}
+
+.topic .icon{
+    height: 6.4vw;
+    width: 6.4vw;
+    margin-top: 3.2vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.topic1 .icon{
+    background-image: url(../img/topic1.png);
+}
+
+.topic2 .icon{
+    background-image: url(../img/topic2.png);
+    background-size: 75%;
+}
+
+.topic3 .icon{
+    background-image: url(../img/topic3.png);
+}
+
+.topic4 .icon{
+    background-image: url(../img/topic4.png);
+    background-size: 90%;
+}
+
+.topic5 .icon{
+    background-image: url(../img/topic5.png);
+}
+
+.topic6 .icon{
+    background-image: url(../img/topic6.png);
+}
+
+.topic7 .icon{
+    background-image: url(../img/topic7.png);
+}
+
+.topic8 .icon{
+    background-image: url(../img/topic8.png);
+}
+
+.topic9 .icon{
+    background-image: url(../img/topic9.png);
+}
+
+.topic .label{
+    font-family: "Mulish Bold";
+    color: #CC9545;
+    font-size: 2.24vw;
+    position: absolute;
+    bottom: 4.8vw;
+}
+
+/* Responsive */
+@media only screen and (max-width: 832px){
+    /* Tablet */
+    .head{
+        padding: 110px 60px 20px;
+    }
+
+    .head .title, .others .title{
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .head .subtitle, .others .subtitle{
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .search{
+        width: 90%;
+        margin-left: 0px;
+        margin: 30px auto;
+    }
+    
+    .search .placeholder{
+        margin-left: 0;
+        font-size: 2.8vw;
+    }
+
+    /* Category */
+    .card{
+        height: 350px;
+        width: 320px;
+        border-radius: 10px;
+        margin-right: 25px;
+        margin-top: 20px;
+    }
+
+    .card-container{
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .card .image{
+        height: 170px;
+        background-size: cover;
+    }
+    
+    .card .information{
+        height: 180px;
+        padding: 10px 25px;
+    }
+    
+    .information .title{
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+    
+    .information p{
+        font-family: "Mulish Regular";
+        font-size: 16px;
+    }
+    
+    .information .label-category{
+        font-size: 16px;
+        background-color: #371601;
+        color: white;
+        font-family: "Mulish Regular";
+        width: 95px;
+        padding: 2px 0px 2px 6px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 3px;
+    }
+    
+    .information .price{
+        font-size: 16px;
+        background-color: #371601;
+        color: white;
+        width: 107px;
+        height: 48px;
+        text-align: center;
+        border-radius: 7px;
+        line-height: 48px;
+        position: absolute;
+        right: 27px;
+        bottom: 35px;
+        font-family: "Mulish Regular";
+        font-size: 15px;
+        transition: 0.3s;
+    }
+
+    .head .title, .others .title{
+        font-size: 38px;
+    }
+    
+    .head .subtitle, .others .subtitle{
+        font-size: 16px;
+    }
+
+    .category-title{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Topic */
+    .topic-container{
+        width: 89%;
+        flex-direction: column;
+        margin: 0 auto 0;
+        align-items: center;
+    }
+    
+    .topic{
+        width: 220px;
+        height: 235px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .topic .icon{
+        height: 80px;
+        width: 80px;
+        margin-top: 40px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .topic .label{
+        font-size: 28px;
+        bottom: 60px;
+    }
+
+    .others .subtitle{
+        margin-bottom: 35px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    /* Handphone */
+    .search .placeholder{
+        margin-left: 0;
+        font-size: 2.8vw;
+    }
+
+    .search{
+        width: 95%;
+    }
+    
+    .search .placeholder{
+        font-size: 3vw;
+    }
+
+    .category{
+        padding: 20px 0 0 30px;
+    }
+    
+    .card-container{
+        flex-direction: column;
+    }
+
+    .head{
+        padding: 110px 17px 20px;
+    }
+
+    .others{
+        padding: 20px 17px 80px;
+    }
+
+    .head .title, .others .title{
+        font-size: 34px;
+    }
+    
+    .head .subtitle, .others .subtitle{
+        font-size: 16px;
+    }
+
+}
